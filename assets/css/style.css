@@ -1,0 +1,240 @@
+:root {
+    --yeallow-Color: #FFC857;
+    --red-color: #9B1D20;
+    --dark-red: 9B1D20;
+    --grey-color: #F2F2F2;
+    --black-color: #1F1F1F;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.line {
+    height: 5px;
+    background-color: var(--yeallow-Color);
+}
+.menu {
+    align-items: center;
+    height: 85px;
+    background-color: var(--red-color);
+}
+
+.logo{
+    max-width: 170px;
+    max-height: 60px;
+}
+
+.bg-image{
+    height: 75vh;
+    background-image: url("../img/background-image.jpg");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    font-family: 'Fredoka One', cursive;
+}
+.bg-image image{
+  Image-rendering: -webkit-optimize contrast;
+}
+
+.red-text{
+  color: var(--red-color) !important;
+}
+
+.rounded-container{
+  background-color: var(--grey-color);
+  border-radius: 5px;
+}
+
+.btn-header{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  background-color: var(--red-color);
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 15px;
+}
+.btn-header:hover{
+  color: #FFC857;
+}
+
+.bg-image .container{
+  margin-top: 5rem;
+}
+
+.text-header{
+  font-size: 3.5rem;
+}
+
+.bg-red{
+  background-color: var(--red-color);
+}
+
+.carrousel-premium{
+  height: 50px;
+}
+.img-premium{
+  max-width: 600px;
+}
+
+.desc-title{
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.5rem;
+}
+
+.subtitle{
+  font-size: 2.5rem;
+  font-family: 'Fredoka One', cursive;
+}
+
+/*Box Cursos*/
+
+.container-curso{
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.img-curso{
+  max-width: 500px;
+}
+
+.title-curso{
+  color: var(--red-color);
+  font-size: 1.5rem;
+  font-family: 'Fredoka One', cursive;
+}
+
+.subtitle-curso{
+  font-family: 'Poppins', sans-serif;
+}
+.container-curso li{
+  font-size: 0.8rem;
+  list-style-type: circle;
+}
+
+
+/****************************************/
+
+
+
+
+/***Footer***/
+.footer{
+  background-color: var(--black-color);
+  /* min-height: 200px; */
+}
+
+.footer img{
+  max-width: 130px;
+}
+.footer p{
+  color: white;
+  font-size: 0.9rem;
+}
+.footer a{
+  color: var(--yeallow-Color);
+  font-size: 0.9rem;
+}
+.footer .title{
+  color: var(--yeallow-Color);
+}
+
+
+/*****************************/
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1440px) {
+  /* CSS */
+  .bg-image{
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1281px) {
+    /* CSS */
+    .bg-image{
+      height: 75vh;
+    }
+}
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .text-header{
+      font-size: 2rem;
+    }
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS */
+    .text-header{
+      font-size: 1.8rem;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    /* CSS */
+    .text-header{
+      font-size: 2rem;
+    }
+    .img-professores{
+      max-width: 300px;
+    }
+    .desc-title{
+      margin-top: 10px;
+    }
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .bg-image .container{
+      margin-top: 1.2rem;
+    }
+    .text-header{
+      font-size: 1.8rem;
+    }
+    .img-professores{
+      max-width: 300px;
+    }
+    .desc-title{
+      margin-top: 10px;
+    }
+    
+    
+  }
