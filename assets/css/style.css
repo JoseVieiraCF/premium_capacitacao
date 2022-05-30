@@ -32,7 +32,7 @@ body{
     background-repeat: no-repeat;
     font-family: 'Fredoka One', cursive;
 }
-.bg-image image{
+.bg-image .image{
   Image-rendering: -webkit-optimize contrast;
 }
 
@@ -111,6 +111,22 @@ body{
   list-style-type: circle;
 }
 
+.accordion-button:not(.collapsed){
+  color: inherit;
+  background: var(--red-color);
+  color: var(--grey-color);
+
+}
+
+.accordion-button:not(.collapsed)::after{
+  filter: brightness(0%) invert(100%);
+}
+
+.accordion-button:focus{
+  box-shadow: inherit;
+}
+
+
 
 /****************************************/
 
@@ -181,6 +197,8 @@ body{
     .text-header{
       font-size: 2rem;
     }
+
+    
     
     /* CSS */
     
@@ -197,6 +215,8 @@ body{
       font-size: 1.8rem;
     }
     
+    
+    
   }
   
   /* 
@@ -208,6 +228,10 @@ body{
     /* CSS */
     .text-header{
       font-size: 2rem;
+      text-align: center;
+    }
+    .link-header{
+      text-align: center;
     }
     .img-professores{
       max-width: 300px;
@@ -223,11 +247,15 @@ body{
   */
   
   @media (min-width: 320px) and (max-width: 480px) {
+    .text-header{
+      font-size: 1.8rem;
+      text-align: center;
+    }
     .bg-image .container{
       margin-top: 1.2rem;
     }
-    .text-header{
-      font-size: 1.8rem;
+    .link-header{
+      text-align: center;
     }
     .img-professores{
       max-width: 300px;
