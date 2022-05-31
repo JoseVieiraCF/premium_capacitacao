@@ -126,6 +126,23 @@ body{
   box-shadow: inherit;
 }
 
+.find-us{
+  background: url("../img/teresina.jpg");
+  background-position: center;
+  background-size: auto;
+  background-repeat: repeat;
+  font-family: 'Fredoka One', cursive;
+}
+
+.find-us h3{
+  color: var(--grey-color);
+}
+
+.googlemap{
+  width: 100%;
+}
+
+
 
 
 /****************************************/
